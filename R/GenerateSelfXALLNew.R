@@ -13,7 +13,7 @@
 #' @export
 #'
 #' @examples
-GenerateSelfXAll <- function(y,x.self.design,x.self.design2,
+GenerateSelfXAllnew <- function(y,x.self.design,x.self.design2,
                              baselineonly,additive,pairwise.interaction,saturated){
   n = nrow(y)
   ###initial x.all to use cbind

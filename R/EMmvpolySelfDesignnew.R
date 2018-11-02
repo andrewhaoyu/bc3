@@ -54,7 +54,8 @@ EMmvpolySelfDesignnew <- function(y,
     z.design.additive = initial.set$z.design.additive
     z.design.pairwise.interaction = initial.set$z.design.pairwise.interaction
     z.design.saturated = initial.set$z.design.saturated
-    x.all <- GenerateSelfXAll(y,x.self.design,baselineonly,additive,pairwise.interaction,saturated)
+    x.all <- GenerateSelfXAllnew(y,x.self.design,x.self.design2,
+                                 baselineonly,additive,pairwise.interaction,saturated)
     covar.names <- initial.set$covar.names
     tumor.names <- initial.set$tumor.names
 
