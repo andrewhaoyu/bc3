@@ -90,7 +90,7 @@ ZSelfDesigntoZallnew <- function(x.self.design,
           for(k in 1:self.design.number2){
             z.all[row.start+k+(j-1)*total.covar.number,
                   (column.start+(k-1)*self.design.second.cat2+1):
-                    (column.start+k*self.design.second.cat2)] <- as.matrix(z.design[j,])
+                    (column.start+k*self.design.second.cat2)] <- as.matrix(z.design2[j,])
           }
         }
       }
