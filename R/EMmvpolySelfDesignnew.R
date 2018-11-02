@@ -68,7 +68,7 @@ EMmvpolySelfDesignnew <- function(y,
     M <- as.integer(nrow(z.standard))
     p.main <- ncol(z.standard)+1
 
-    model.result = EMStep(delta0,as.matrix(y),x.all,z.standard,z.all,missingTumorIndicator)
+    model.result = EMStepnew(delta0,as.matrix(y),x.all,z.standard,z.all,missingTumorIndicator)
     ###delta represent second stage parameters
     summary.result <- SummaryResult(model.result,
                                     baselineonly,
