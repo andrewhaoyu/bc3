@@ -3,10 +3,10 @@ logit_inver <- function(x){
 }
 
 load_so = function(so_file) {
-  system.file(so_file, package = "bc2")
+  system.file(so_file, package = "bc3")
 }
 
 
-#' @useDynLib bc2
+#' @useDynLib bc3
 #' @importFrom Rcpp sourceCpp
 NULL
