@@ -17,8 +17,8 @@
 #' @examples
 EMStepnew <- function(delta0,y,x.all,z.standard,z.all,missingTumorIndicator){
 
-  tol <- as.numeric(1E-03)
-  tolMaxstep <- as.numeric(1E-03)
+  tol <- as.numeric(0.01)
+  tolMaxstep <- as.numeric(0.05)
   #delta_old <- rep(0,length(delta0))
   delta_old <- delta0
   ##EM algorithm
